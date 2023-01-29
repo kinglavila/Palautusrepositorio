@@ -9,16 +9,26 @@ const Hello = (props) => {
   )
 }
 
-const App = () => {
-  const nimi = 'Pekka'
-  const ika = 10
-
+const Footer = () => {
   return (
     <div>
+      greeting app created by
+      <a href="https://github.com/mluukkai"> mluukkai</a>
+    </div>
+  )
+}
+
+const App = () => {
+  const name  = 'Pekka'
+  const age  = 10
+
+  return (
+    <>
       <h1>Greetings</h1>
       <Hello name="Maya" age={26 + 10} />
-      <Hello name={nimi} age ={ika} />
-    </div>
+      <Hello name={name} age={age} />
+      <Footer /> 
+    </>
   )
 }
 
